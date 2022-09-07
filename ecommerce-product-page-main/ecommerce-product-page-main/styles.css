@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  margin: 0 5rem 2rem 5rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+nav {
+  overflow: hidden;
+  margin-top: 3rem;
+  z-index: 0;
+}
+nav::after {
+  clear: both;
+}
+nav #logo {
+  float: left;
+  display: inline-block;
+}
+nav ul {
+  float: left;
+  list-style: none;
+  text-align: left;
+  margin: 0;
+}
+nav ul li {
+  display: Inline-block;
+  padding-left: 2em;
+}
+nav ul li a {
+  float: left;
+  color: hsl(219deg, 9%, 45%);
+  text-decoration: none;
+  font-size: 14px;
+}
+nav .float-right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+nav #cart {
+  right: 250px;
+  top: 50px;
+  z-index: 2;
+  position: fixed;
+}
+nav #avatar {
+  width: 50px;
+  right: 150px;
+  z-index: 1;
+  position: fixed;
+  top: 35px;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+#MainContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+}
+#MainContainer .product {
+  height: 100%;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 40px;
+}
+#MainContainer #MainImage {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#MainContainer #MainImage #Main {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 80%;
+}
+#MainContainer #TNBodyContainer {
+  height: 20%;
+  width: 83%;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 9%;
+  display: flex;
+  gap: 1.5em;
+}
+#MainContainer #TNBodyContainer img {
+  height: 80%;
+  width: 20%;
+  border: 5px solid transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.description {
+  width: 40%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  flex-direction: column;
+}
+.description .top {
+  width: 100%;
+}
+.description .mid {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+#bottom {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+}
+
+#quantity {
+  background-color: hsl(223deg, 64%, 98%);
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#quantity img {
+  margin: 0px 30%;
+  width: 20px;
+  cursor: pointer;
+}
+
+#cartBtn {
+  height: 50px;
+  width: 300px;
+  margin-left: 20px;
+  background-color: hsl(26deg, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#cartBtn svg {
+  color: hsl(25deg, 100%, 94%);
+}
+#cartBtn label {
+  margin-left: 1em;
+  color: hsl(25deg, 100%, 94%);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
