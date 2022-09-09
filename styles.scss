@@ -1,5 +1,5 @@
 /* VARIABLES */
-$orange:hsl(26, 100%, 55%);
+$orange: hsl(26, 100%, 55%);
 $pale-orange: hsl(25, 100%, 94%);
 $dark-blue: hsl(220, 13%, 13%);
 $dgb: hsl(219, 9%, 45%); //gb:grey-blue
@@ -9,98 +9,90 @@ $white: hsl(0, 0%, 100%);
 
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
-  
-  body {
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap");
+
+body {
     margin: 0 5rem 2rem 5rem;
-    font-family: 'Kumbh Sans', sans-serif;
-  }
+    font-family: "Kumbh Sans", sans-serif;
+}
 
-
-  
 /* HEADER */
 
-  nav {
+nav {
     overflow: hidden;
     margin-top: 3rem;
     z-index: 0;
 
     &::after {
-      clear: both;
+        clear: both;
     }
+}
 
-    #logo {
-      float: left;
-      display: inline-block;
-    }
+#logo {
+    float: left;
+    display: inline-block;
+}
 
-    ul {
-      float: left;
-      list-style: none;     
-      text-align: left;
-      margin: 0;
+ul {
+    float: left;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+}
 
-      li {                                                             
-        display:Inline-block;
-        padding-left: 2em;    
-        
-        a {
-          float: left;
-          color: $dgb;
-          text-decoration: none;
-          font-size: 14px;
-          
-        }
+li {
+    display: Inline-block;
+    padding-left: 2em;
+}
 
-      }
+a {
+    float: left;
+    color: $dgb;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-    }
+.float-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
 
-    .float-right {
-      float: right;
-      display: flex;
-      align-items: center;
-      
-    }
+#cart {
+    right: 250px;
+    top: 50px;
+    z-index: 2;
+    position: fixed;
+}
 
-    #cart {
-      right: 250px;
-      top: 50px;
-      z-index: 2;
-      position: fixed;
-    }
-  
-    #avatar {
-      width: 50px;
-      right: 150px;
-      z-index: 1;
-      position: fixed;
-      top: 35px;
-     
-    }
+#avatar {
+    width: 50px;
+    right: 150px;
+    z-index: 1;
+    position: fixed;
+    top: 35px;
+}
 
-  }
-  
-  hr {
+hr {
     margin-top: 50px;
-  }
+}
 
-  /* CONTENT */
+/* CONTENT */
 
-  #MainContainer { 
+#MainContainer {
     display: flex;
     flex-direction: row;
     height: 100%;
     position: relative;
 
     .product {
-      height: 100%;
-      width: 42%;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      margin-top: 40px;
-    } 
+        height: 100%;
+        width: 42%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 40px;
+    }
 
     #MainImage {
         display: flex;
@@ -110,38 +102,39 @@ $white: hsl(0, 0%, 100%);
         width: 100%;
 
         #Main {
-          border-radius: 25px;
-          object-fit: cover;
-          height: 100%;
-          width: 80%;
+            border-radius: 25px;
+            object-fit: cover;
+            height: 100%;
+            width: 80%;
         }
-    } 
+    }
 
-    #TNBodyContainer {
+    #ThumbContainer {
         height: 20%;
         width: 83%;
         position: relative;
         margin-top: 30px;
-        margin-left: 9%;
+        margin-left: 10%;
         display: flex;
         gap: 1.5em;
 
-        img {
-          height: 80%;
-          width: 20%;
-          border: 5px solid transparent;
-          object-fit: cover;
-          cursor: pointer;
-          border-radius: 15px;
+        .tn-active {
+          opacity: 50%;
+          border: 4px solid $orange;
         }
-    } 
 
-    
-  }
+        img {
+            height: 80%;
+            width: 20%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+    }
+}
 
 
 
-  .description {
+.description {
     width: 40%;
     margin-top: 70px;
     display: flex;
@@ -150,47 +143,46 @@ $white: hsl(0, 0%, 100%);
     height: 80%;
     flex-direction: column;
     .top {
-      width: 100%;}
-    .mid {
-      display: flex;
-      flex-direction: column;
-      font-size: 16px;
+        width: 100%;
     }
-  }
+    .mid {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
 
-  h3 {
+h3 {
     text-transform: uppercase;
     color: $orange;
     font-size: 14px;
     letter-spacing: 2px;
-  }
+}
 
-  h2 {
+h2 {
     font-size: 42px;
     margin-top: 0.75em;
-  }
+}
 
-  #desc {
+#desc {
     line-height: 2;
     margin-top: 0;
     margin-bottom: 5%;
     color: $dgb;
-  }
+}
 
-
-  #listpricing {
+#listpricing {
     display: inline;
-  }
+}
 
-
-  #price {
+#price {
     font-size: 28px;
     font-weight: 700;
     margin-top: 2em;
     vertical-align: middle;
-  }
+}
 
-  #discount {
+#discount {
     margin-left: 1em;
     background-color: $pale-orange;
     color: $orange;
@@ -198,43 +190,43 @@ $white: hsl(0, 0%, 100%);
     font-weight: 700;
     border-radius: 5px;
     vertical-align: middle;
-  }
+}
 
-  #ogprice {
+#ogprice {
     padding: 0.5em 0 1em 0;
     color: $gb;
     text-decoration: line-through;
     font-weight: 500;
-  }
+}
 
-  #bottom {
+#bottom {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
     align-self: start;
-  }
+}
 
-  button {
+button {
     border: none;
     border-radius: 10px;
-  }
+}
 
-  #quantity {
-    background-color:$lgb;
+#quantity {
+    background-color: $lgb;
     height: 50px;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    img {
-      margin: 0px 30%;
-      width: 20px;
-      cursor: pointer;
-    }
-  }
 
-  #cartBtn {
+    img {
+        margin: 0px 30%;
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+#cartBtn {
     height: 50px;
     width: 300px;
     margin-left: 20px;
@@ -245,57 +237,18 @@ $white: hsl(0, 0%, 100%);
     cursor: pointer;
 
     label {
-      margin-left: 1em;
-      color: $pale-orange;
-      font-weight: 700;
-      font-size: 16px;
-      font-family: 'Kumbh Sans';
+        margin-left: 1em;
+        color: $pale-orange;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: "Kumbh Sans";
     }
-  }
+}
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
