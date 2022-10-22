@@ -22,7 +22,7 @@
       <li><a href="#">Contact</a></li>
     </ul>
   <div class="float-right">
-    <img id="cart" src="./images/icon-cart.svg" alt="">
+    <img id="cart" src="./images/icon-cart2.svg" alt="">
     <img id="avatar" src="./images/image-avatar.png" alt="">
   </div>
 </nav>
@@ -61,11 +61,11 @@
     </div>
 
     <div id="bottom">
-      <button id="quantity">
-        <img id="minus" src="./images/icon-minus.svg" alt="">
-        <span>0</span>
-        <img id="plus"src="./images/icon-plus.svg" alt="">
-      </button>
+      <div id="quantity">
+        <img id="minus" src="./images/icon-minus.svg" alt="" onclick="remove()">
+        <span id="amount">0</span>
+        <img id="plus"src="./images/icon-plus.svg" alt="" onclick="add()">
+      </div>
 
       <button id="cartBtn">
         <img src="./images/icon-cart.svg" alt="">
@@ -77,13 +77,6 @@
 
 </div> <!-- End Main -->
 
-
-
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="./script.js"></script>
 </body>
 </html>

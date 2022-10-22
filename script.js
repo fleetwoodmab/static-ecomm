@@ -1,3 +1,5 @@
+/* Lightbox */
+
 window.onload = function() {
     var mainImg = document.getElementById('Main');
 
@@ -41,3 +43,25 @@ window.onload = function() {
 
     };
 };
+
+
+/* Add and remove items */
+
+function add()
+{
+    var amount = document.getElementById('amount');
+    var number = amount.innerHTML;
+    number++;
+    amount.innerHTML = number;
+}
+
+function remove()
+{
+    var amount = document.getElementById('amount');
+    var number = amount.innerHTML;
+    number--;
+    if(number <= 0) {
+        number = 0;
+    }
+    amount.innerHTML = number;
+}

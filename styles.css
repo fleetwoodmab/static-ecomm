@@ -18,7 +18,6 @@ nav::after {
 
 #logo {
   float: left;
-  display: inline-block;
 }
 
 ul {
@@ -50,14 +49,14 @@ a {
   right: 250px;
   top: 50px;
   z-index: 2;
-  position: fixed;
+  position: absolute;
 }
 
 #avatar {
   width: 50px;
   right: 150px;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 35px;
 }
 
@@ -198,6 +197,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 #quantity img {
   margin: 0px 30%;
@@ -217,17 +217,9 @@ button {
 }
 #cartBtn label {
   margin-left: 1em;
-  color: hsl(25deg, 100%, 94%);
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   font-size: 16px;
   font-family: "Kumbh Sans";
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228deg, 45%, 44%);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

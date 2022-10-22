@@ -30,7 +30,6 @@ nav {
 
 #logo {
     float: left;
-    display: inline-block;
 }
 
 ul {
@@ -62,14 +61,14 @@ a {
     right: 250px;
     top: 50px;
     z-index: 2;
-    position: fixed;
+    position: absolute;
 }
 
 #avatar {
     width: 50px;
     right: 150px;
     z-index: 1;
-    position: fixed;
+    position: absolute;
     top: 35px;
 }
 
@@ -218,6 +217,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 
     img {
         margin: 0px 30%;
@@ -238,17 +238,11 @@ button {
 
     label {
         margin-left: 1em;
-        color: $pale-orange;
+        color: $white;
         font-weight: 700;
         font-size: 16px;
         font-family: "Kumbh Sans";
+        cursor: pointer;
     }
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
