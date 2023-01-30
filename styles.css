@@ -37,6 +37,11 @@ a {
   color: hsl(219deg, 9%, 45%);
   text-decoration: none;
   font-size: 14px;
+  padding-bottom: 45px;
+}
+a:hover {
+  border-bottom: 4px solid hsl(26deg, 100%, 55%);
+  color: hsl(220deg, 13%, 13%);
 }
 
 .float-right {
@@ -52,16 +57,40 @@ a {
   position: absolute;
 }
 
+.tooltip .tooltiptext {
+  width: 161px;
+  background-color: #b43c3c;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 12px;
+  right: 200px;
+  position: absolute;
+  top: 100px;
+  height: 100px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 #avatar {
   width: 50px;
   right: 150px;
   z-index: 1;
   position: absolute;
   top: 35px;
+  border-radius: 50%;
+}
+#avatar:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 1.5px hsl(26deg, 100%, 55%);
 }
 
 hr {
-  margin-top: 50px;
+  margin-top: -5px;
+  color: hsl(223deg, 64%, 98%);
 }
 
 /* CONTENT */
@@ -205,6 +234,10 @@ button {
   cursor: pointer;
 }
 
+#minus:hover, #plus:hover {
+  opacity: 50%;
+}
+
 #cartBtn {
   height: 50px;
   width: 300px;
@@ -222,4 +255,7 @@ button {
   font-size: 16px;
   font-family: "Kumbh Sans";
   cursor: pointer;
+}
+#cartBtn:hover {
+  opacity: 50%;
 }/*# sourceMappingURL=styles.css.map */
